@@ -5,7 +5,6 @@
 {% from 'nginx/ng/map.jinja' import nginx, sls_block with context %}
 
 include:
-  - nginx.ng.config
   - nginx.ng.service
   - nginx.ng.servers
   - nginx.ng.certificates
