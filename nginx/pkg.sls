@@ -79,8 +79,6 @@ nginx_ppa_repo:
     - absent
     {%- endif %}
     {% if grains.os == 'Ubuntu' %}
-    - ppa: nginx/{{ nginx.ppa_version }}
-    {% else %}
     - name: deb http://ppa.launchpad.net/nginx/{{ nginx.ppa_version }}/ubuntu {{ grains.oscodename }} main
     - keyid: C300EE8C
     - keyserver: keyserver.ubuntu.com
